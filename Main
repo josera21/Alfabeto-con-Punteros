@@ -1,31 +1,23 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/* 
- * File:   main.cpp
- * Author: joser
+ * Main.cpp
  *
- * Created on 13 de enero de 2017, 12:16
+ *  Created on: 13/01/2017
+ *      Author: joser
  */
-
-#include <cstdlib>
 #include <iostream>
+#include <stdlib.h>
 #include <stdio.h>
+#include <windows.h>
 using namespace std;
 
-/*
- * 
- */
-int main(int argc, char** argv) {
-
-    char *buffer;
-    buffer = new char['A'];
-    for(*buffer = 'A'; *buffer <= 'Z'; (*buffer)++){
-        cout<<"Alfabeto: "<<*buffer<<endl;
-	      cout<<"Direccion: "<<buffer<<endl;
-    }
-    return 0;
+int main()
+{
+	char *buffer;
+	buffer = new char['A'];
+	
+	for(*buffer = 'A'; *buffer <= 'Z'; (*buffer)++){
+		cout<<"Alfabeto: "<<(*buffer)<<endl;
+		cout<<"Direccion: "<<buffer<<endl;
+	}
+	return 	0;
 }
